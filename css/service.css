@@ -1,0 +1,41 @@
+.service_top{
+    width: 7.5rem;
+    height: 4rem;
+}
+
+.service_top>img{
+    width: 100%;
+    height: 100%;
+}
+
+.service_text{
+    text-align: center;
+    letter-spacing: 0.01rem;
+    padding: 1rem 0.75rem;
+}
+
+.service_text>p:nth-child(1){
+    /* font-weight: bold; */
+    font-size: 0.48rem;
+}
+
+.service_text>p:nth-child(2){
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.service_phone>a{
+    color: #fff;
+    display: block;
+    width: 6rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    font-size: 0.36em;
+    background: #ff6b19;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    letter-spacing: 0.01rem;
+}
