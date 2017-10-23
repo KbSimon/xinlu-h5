@@ -13,3 +13,15 @@ a{
     color:#333;
     text-decoration: none;
 }
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:'';
+    visibility:hidden;
+    height:0
+    }
+.clearfloat{
+    zoom:1
+}
+
