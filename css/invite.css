@@ -42,7 +42,7 @@
 .invite_bottom{
     width: 7.5rem;
     bottom: 0.5rem;
-    position: fixed;
+    position: absolute;
     font-size: 0.3rem;
     text-align: center;
 }
