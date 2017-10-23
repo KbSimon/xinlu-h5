@@ -1,40 +1,48 @@
-.service_top{
+.invite_top{
     width: 7.5rem;
-    height: 4rem;
+    height: 5.6rem;
 }
 
-.service_top>img{
+.invite_top>img{
     width: 100%;
     height: 100%;
 }
 
-.service_text{
+.invite_text{
     text-align: center;
     letter-spacing: 0.01rem;
-    padding: 1rem 0.75rem;
+    padding: 0 0.75rem;
 }
 
-.service_text>p:nth-child(1){
+.invite_text>p:nth-child(1){
     font-size: 0.48rem;
 }
 
-.service_text>p:nth-child(2){
+.invite_text>p:nth-child(2){
     margin-top: 0.2rem;
     font-size: 0.3rem;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
 }
 
-.service_phone>a{
+.invite_btn{
     color: #fff;
     display: block;
     width: 6rem;
     height: 0.8rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     font-size: 0.36em;
-    background: #ff6b19;
     border-radius: 0.4rem;
     text-align: center;
     line-height: 0.8rem;
     letter-spacing: 0.01rem;
+    background: url("../images/invite_btn.png") center no-repeat;
+}
+
+.invite_bottom{
+    width: 7.5rem;
+    bottom: 0.5rem;
+    position: fixed;
+    font-size: 0.3rem;
+    text-align: center;
 }
