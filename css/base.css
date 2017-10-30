@@ -14,6 +14,12 @@ a{
     text-decoration: none;
 }
 
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
 .clearfloat:after{
     display:block;
     clear:both;
@@ -24,4 +30,3 @@ a{
 .clearfloat{
     zoom:1
 }
-
