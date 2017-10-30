@@ -1,0 +1,144 @@
+.banner {
+    width: 7.5rem;
+    height: 5.77rem;
+}
+
+.banner>img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    padding-top: 0.8rem;
+    text-align: center;
+}
+
+.text_01 {
+    color: #fd9c1c;
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-left: 0.1rem;
+    text-shadow: 5px 5px 5px #fce8cd;
+}
+
+.text_02 {
+    color: #fee4cd;
+    padding: 0.2rem 0;
+    font-size: 0.5rem;
+    margin-left: -0.4rem;
+}
+
+.text_03 {
+    color: #fd9c1c;
+    font-size: 0.3rem;
+    padding: 0 0.8rem;
+    line-height: 1.6;
+    letter-spacing: 0.01rem;
+}
+
+.content>img {
+    width: 6.15rem;
+    height: 2.8rem;
+    margin: 0 auto;
+}
+
+.text_04 {
+    color: #999;
+    font-size: 0.25rem;
+    padding: 0 0.8rem;
+    letter-spacing: 0.01rem;
+}
+
+.btn_01{
+    margin: 0.5rem auto;
+}
+
+.btn_02{
+    margin: 0 auto;
+}
+
+.btn_01,
+.btn_02 {
+    width: 6.15em;
+    height: 1.5rem;
+    
+    position: relative;
+}
+
+.btn_01>img,
+.btn_02>img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_01>p,
+.btn_02>p {
+    top: 0.5rem;
+    left: 2.35rem;
+    color: #fff;
+    font-size: 0.35rem;
+    position: absolute;
+}
+
+.bottom_img {
+    width: 7.5rem;
+    height: 3.07em;
+}
+
+.bottom_img>img {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.bottom_content {
+    width: 7.5rem;
+    text-align: center;
+    background: #ffddad;
+}
+
+.text_05 {
+    color: #fdf2e3;;
+    font-size: 0.5rem;
+}
+
+
+.bottom_ul{
+    margin: 0 auto;
+    background: #ffddad;
+}
+
+.bottom_ul>li{
+    float: left;
+    width: 2.72rem;
+    height: 3.3rem;
+    margin: 0.25rem 0 0.5rem 0.7rem;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.bottom_ul>li>img{
+    width: 2.04rem;
+    height:1.32rem;
+    padding-top: 0.5rem;
+}
+
+.bottom_ul>li>p:first-of-type{
+    color: #ff4c22;
+    font-size: 0.25rem;
+}
+
+.bottom_ul>li>p:last-of-type{
+    color: #ff4c22;
+    font-size: 0.25rem;
+}
+
+.bottom_ul>li>div{
+    width: 0.35rem;
+    height: 0.08rem;
+    margin: 0 auto;
+    margin-top: 0.12rem;
+    border-radius: 0.1rem;
+    background:  #ff4c22;
+}
