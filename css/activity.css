@@ -1,0 +1,87 @@
+.part_01{
+    width: 7.5rem;
+    height: 13rem;
+}
+
+.part_01>img,
+.part_02>img,
+.part_03>img{
+    width: 100%;
+    height: 100%;
+}
+
+.part_02{
+    width: 7.5rem;
+    height: 8.3rem;
+    position: relative;
+}
+
+.part_03{
+    width: 7.5rem;
+    height: 7.6rem;
+    position: relative;
+}
+
+.part_02_text{
+    color: #fff;
+    top: 1.9rem;
+    font-size: 0.28rem;
+    position: absolute;
+    text-align: center;
+    margin: 0 0.8rem;
+}
+
+.btn{
+    width: 7.5rem;
+    color: #fff;
+    bottom: 0.5rem;
+    font-size: 0.28rem;
+    position: absolute;
+}
+
+.btn_01,
+.btn_02,
+.btn_03{
+    width: 2rem;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    border-radius: 0.8rem;
+    background: #fc60cb;
+}
+
+.btn_01{
+    float: left;
+    margin-left: 0.9rem;
+}
+
+.btn_02{
+    float: right;
+    margin-right: 0.9rem;
+}
+
+.btn_03{
+    color: #fff;
+    float: left;
+    font-size: 0.28rem;
+    bottom: 1.4rem;
+    position: absolute;
+    margin-left: 1.6rem;
+}
+
+.notice{
+    color: #a98cfc;
+    font-size: 0.28rem;
+    text-align: center;
+}
+
+.part_04{
+    width: 7.5rem;
+    height: 5.3rem;
+    background: url("../images/activity_bg.png") center no-repeat;
+}
+
+.part_04>p{
+    text-align: center;
+    font-size: 0.28rem;
+}
