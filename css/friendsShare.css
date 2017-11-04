@@ -44,7 +44,7 @@ form{
 .register_ul>li>input{
     border: none;
     outline: none;
-    height: 0.85rem;
+    height: 0.86rem;
     font-size: 0.3rem;
     padding-left: 0.1rem;
     letter-spacing: 0.01rem;
@@ -52,33 +52,30 @@ form{
 
 .register_ul>li>div{
     width: 0.9rem;
-    height: 0.9rem;
-    
+    height: 0.9rem; 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.register_ul>li>div>img{
+    padding-left: 0.2rem;
+}
+
 .icon_01>img{
-    width: 0.35rem;
-    /* height: 0.49rem; */
-    /* margin-top: 5%; */
-    /* margin: 0 0 0.1rem 0.4rem; */
+    width: 0.4rem;
 }
 
 .icon_02>img{
     width: 0.5rem;
-    /* margin: 0 0 0.15rem 0.3rem; */
 }
 
 .icon_03>img{
     width: 0.4rem;
-    /* margin: 0 0 0.17rem 0.4rem; */
 }
 
 .icon_04>img{
     width: 0.4rem;
-    /* margin: 0 0 0.17rem 0.4rem; */
 }
 
 .code_btn{
@@ -97,5 +94,57 @@ form{
 .draw{
     width: 6.15rem;
     height: 1.05rem;
-    vertical-align: middle
+    color: #fff;
+    margin: 0.4rem auto;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 1.05rem;
+    background: #fe7077;
+    border-radius: 1.05rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.deal>input:checked+label {
+    border: 1px solid #fe9c1c;
+}
+
+.deal>input+label {
+    top: 0.05rem;
+    margin-right: 0.05rem;
+    padding: 0.1rem;
+    border-radius: 0.05rem;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e4e4e4;
+}
+
+.deal>input:checked+label::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0.2rem;
+    font-size: 0.2rem;
+    color: #fe9c1c;
+    content: "\2713";
+    position: absolute;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.deal{
+    text-align: center;
+    font-size: 0.3rem;
+}
+
+.new_bg{
+    width: 7.5rem;
+    height: 3.5rem;
+}
+
+.new_bg>img{
+    width: 100%;
+    height: 100%;
 }
