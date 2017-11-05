@@ -112,12 +112,11 @@
     }, false);
     // 用户注册协议效果
     $("#deal_input").click(function () {
-        var ii = $("input[type='checkbox']").prop("checked");
         // 同意注册协议
-        if (ii === true) {
+        if ($("input[type='checkbox']").prop("checked") === true) {
             $(".draw").removeAttr("disabled").removeAttr("id");
         // 未同意注册协议
-        } else if (ii === false) {
+        } else if ($("input[type='checkbox']").prop("checked") === false) {
             $(".draw").attr({
                 "disabled": "disabled",
                 "id": "disabled"
@@ -126,13 +125,14 @@
     })
     // 点击立即注册时的判断
     $("#btn").click(function () {
-        // 表单未输入内容,跳转回表单
+        // 表单未输入内容未同意注册协议,跳转回表单
         if ($(".mobile").val() == "" || $(".code").val() == "" || $(".password").val() == "" || $(
-                ".confirm_pawwsprd").val() == "") {
+                ".confirm_pawwsprd").val() == "" || $("input[type='checkbox']").prop("checked")!= true) {
             window.location.href = "#register";
             return false;
-        // 输入内容后的操作
+        // 输入内容后同意注册协议的操作
         } else {
+            $(".draw").removeAttr("disabled").removeAttr("id");
             return true;
         }
     });
