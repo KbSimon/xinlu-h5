@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>好友分享</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/base.css">
-    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/friendsShare.css"> -->
-    <link rel="stylesheet" href="css/friendsShare.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/friendsShare.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/registerGift.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/xinlu-icon.ico">
     <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
@@ -19,7 +18,7 @@
         <div class="banner">
             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/share_banner.png" alt="">
         </div>
-        <div class="register">
+        <div class="register" id="register">
             <form action="">
                 <ul class="register_ul">
                     <li>
@@ -55,7 +54,7 @@
                 <input type="checkbox" id="deal_input" checked>
                 <label for="deal_input"> </label>
                 <a style="color:#666;">我同意按如下</a>
-                <a class="to_protlcol" style="color:#65b9ed">《鑫路金融注册协议》</a>
+                <a class="to_protlcol" style="color:#65b9ed" href="http://xinluhtml.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/registerDeal.html">《鑫路金融注册协议》</a>
             </div>
         </div>
         <div class="new_bg">
@@ -96,7 +95,7 @@
         </div>
         <div class="content" style="padding-top:0;background: #b7d1ff;height:100%">
             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/share_img02.png" style="padding-top:0.5rem;">
-            <div class="btn_01">
+            <div class="btn_01" id="btn">
                 <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/register_btn.png">
                 <p>立即注册</p>
             </div>
@@ -111,4 +110,23 @@
     addEventListener('resize', function () {
         html.style.fontSize = html.offsetWidth / 750 * 100 + 'px';
     }, false);
+    $("#deal_input").click(function () {
+    var ii = $("input[type='checkbox']").prop("checked");
+    console.log(ii)
+    if (ii === true) {
+        $(".draw").removeAttr("disabled").removeAttr("id");
+    } else if (ii === false) {
+        $(".draw").attr({"disabled":"disabled","id":"disabled"});
+    };
+    $("#btn").click(function(){
+        alert("1");
+        console.log(1)
+        if($(".mobile").val()=="" || $(".code").val()=="" || $(".password").val() =="" || $(".confirm_pawwsprd").val()==""){
+            alert("122")
+            window.location.href="#register";
+        }else{
+
+        }
+    })
+})
 </script>

@@ -1,0 +1,15 @@
+main{
+    margin: 0.5rem;
+}
+
+.title>p{
+    text-align: center;
+    font-size: 0.4rem;
+    margin: 0.5rem auto;
+}
+
+.text>p{
+    text-align: justify;
+    text-indent: 35px;
+    font-size: 0.3rem;
+}
