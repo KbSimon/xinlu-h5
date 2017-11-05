@@ -88,10 +88,10 @@
                     <p style="color:#ffa303;">收益方式</p>
                     <div style="background-color:#ffa303;"></div>
                 </li>
-                
+
             </ul>
-                <p style="color:#fff;font-size:0.2rem;">温馨提示</p>
-                <p style="color:#fff;font-size:0.2rem;padding:0.2rem 0.8rem 0.2rem 0.8rem;">每人仅限注册并领取一次，注册成功后，红包即进入有效期，请注意及时使用；红包领取成功之后，您可以在pc端“我的账户-我的红包”或app端“我的-我的红包”中进行查看。</p>
+            <p style="color:#fff;font-size:0.2rem;">温馨提示</p>
+            <p style="color:#fff;font-size:0.2rem;padding:0.2rem 0.8rem 0.2rem 0.8rem;">每人仅限注册并领取一次，注册成功后，红包即进入有效期，请注意及时使用；红包领取成功之后，您可以在pc端“我的账户-我的红包”或app端“我的-我的红包”中进行查看。</p>
         </div>
         <div class="content" style="padding-top:0;background: #b7d1ff;height:100%">
             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/share_img02.png" style="padding-top:0.5rem;">
@@ -110,23 +110,30 @@
     addEventListener('resize', function () {
         html.style.fontSize = html.offsetWidth / 750 * 100 + 'px';
     }, false);
+    // 用户注册协议效果
     $("#deal_input").click(function () {
-    var ii = $("input[type='checkbox']").prop("checked");
-    console.log(ii)
-    if (ii === true) {
-        $(".draw").removeAttr("disabled").removeAttr("id");
-    } else if (ii === false) {
-        $(".draw").attr({"disabled":"disabled","id":"disabled"});
-    };
-    $("#btn").click(function(){
-        alert("1");
-        console.log(1)
-        if($(".mobile").val()=="" || $(".code").val()=="" || $(".password").val() =="" || $(".confirm_pawwsprd").val()==""){
-            alert("122")
-            window.location.href="#register";
-        }else{
-
-        }
+        var ii = $("input[type='checkbox']").prop("checked");
+        // 同意注册协议
+        if (ii === true) {
+            $(".draw").removeAttr("disabled").removeAttr("id");
+        // 未同意注册协议
+        } else if (ii === false) {
+            $(".draw").attr({
+                "disabled": "disabled",
+                "id": "disabled"
+            });
+        };
     })
-})
+    // 点击立即注册时的判断
+    $("#btn").click(function () {
+        // 表单未输入内容,跳转回表单
+        if ($(".mobile").val() == "" || $(".code").val() == "" || $(".password").val() == "" || $(
+                ".confirm_pawwsprd").val() == "") {
+            window.location.href = "#register";
+            return false;
+        // 输入内容后的操作
+        } else {
+            return true;
+        }
+    });
 </script>
