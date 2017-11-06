@@ -1,0 +1,71 @@
+.banner{
+    width: 7.5rem;
+    height: 3.15rem;
+    background: url("../images/app_01.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.middle{
+    width: 7.5rem;
+    height: 5.8rem;
+    background: url("../images/app_02.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.bottom{
+    width: 7.5rem;
+    height: 4.4rem;
+    padding: 0.8rem 0;
+    background: #b7d1ff;
+    text-align: center;
+}
+
+.load_01,
+.load_02{
+    margin: 0 auto;
+    width: 5.05rem;
+    height: 0.8rem;
+    border-radius: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.load_01{
+    color: #fff;
+    background: #6898e6;
+}
+
+.load_02{
+    color: #6898e6;
+    background: transparent;
+    border: 1px solid #6898e6;
+}
+
+.load_content{
+    margin: 0 auto;
+    width: 4rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.load_img01,
+.load_img02{
+    float: left;
+    width: 1rem;
+    height: 0.8rem;
+}
+
+.load_img01{
+    background: url("../images/app_03.png") center no-repeat;
+    background-size: 0.44rem 0.53rem;
+}
+
+.load_img02{
+    background: url("../images/app_04.png") center no-repeat;
+    background-size: 0.5rem 0.58rem;
+}
+
+.load_content>p{
+    float: left;
+    font-size: 0.3rem;
+    /* padding-left: 0.1rem; */
+}

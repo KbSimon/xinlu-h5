@@ -115,22 +115,35 @@
         // 同意注册协议
         if ($("input[type='checkbox']").prop("checked") === true) {
             $(".draw").removeAttr("disabled").removeAttr("id");
-        // 未同意注册协议
+            // 未同意注册协议
         } else if ($("input[type='checkbox']").prop("checked") === false) {
             $(".draw").attr({
                 "disabled": "disabled",
                 "id": "disabled"
             });
         };
+    });
+    // 领取红包点击时操作
+    $(".draw").click(function () {
+        // 表单内容为空时阻止提交
+        if ($(".mobile").val() == "" || $(".code").val() == "" || $(".password").val() == "" || $(
+                ".confirm_pawwsprd").val() == "" || $("input[type='checkbox']").prop("checked") != true) {
+            return false;
+        // 输入内容后同意注册协议后跳转到下载引导
+        } else {
+            $(".draw").removeAttr("disabled").removeAttr("id");
+            return true;
+            window.location.href = "downloadApp.html";
+        }
     })
     // 点击立即注册时的判断
     $("#btn").click(function () {
         // 表单未输入内容未同意注册协议,跳转回表单
         if ($(".mobile").val() == "" || $(".code").val() == "" || $(".password").val() == "" || $(
-                ".confirm_pawwsprd").val() == "" || $("input[type='checkbox']").prop("checked")!= true) {
+                ".confirm_pawwsprd").val() == "" || $("input[type='checkbox']").prop("checked") != true) {
             window.location.href = "#register";
             return false;
-        // 输入内容后同意注册协议的操作
+            // 输入内容后同意注册协议跳转到下载APP
         } else {
             $(".draw").removeAttr("disabled").removeAttr("id");
             return true;
