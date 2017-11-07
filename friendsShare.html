@@ -19,7 +19,7 @@
             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/share_banner.png" alt="">
         </div>
         <div class="register" id="register">
-            <form action="">
+            <form action="aboutUs.html" method="post">
                 <ul class="register_ul">
                     <li>
                         <div class="icon_01">
@@ -62,12 +62,12 @@
         </div>
         <div class="bottom_content" style="background: #b7d1ff;">
             <p class="text_05" style="margin-left:-0.4rem">“</p>
-            <p class="text_03" style="color:#fff;padding-bottom:0.5rem;">最高预期年化率14%，时间短！收益高！起投低！投资就能看到涨</p>
+            <p class="text_03" style="color:#fff;padding-bottom:0.5rem;">最高预期年化率13%，时间短！收益高！起投低！投资就能看到涨</p>
             <ul class="bottom_ul clearfloat" style="background: #b7d1ff;">
                 <li>
                     <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/share_04.png">
                     <p style="color:#ffa303;">预期年化收益</p>
-                    <p style="color:#ffa303;">14.00%</p>
+                    <p style="color:#ffa303;">13.00%</p>
                     <div style="background-color:#ffa303;"></div>
                 </li>
                 <li>
@@ -133,7 +133,15 @@
         } else {
             $(".draw").removeAttr("disabled").removeAttr("id");
             return true;
-            window.location.href = "downloadApp.html";
+            // $.ajax({
+            //     type: 'post',
+            //     dataType: 'json',
+            //     data: {},
+            //     url: '',
+            //     success: function(){
+            //         // window.location.href = "downloadApp.html";
+            //     }
+            // }) 
         }
     })
     // 点击立即注册时的判断
