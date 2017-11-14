@@ -1,6 +1,6 @@
 .invite_top{
     width: 7.5rem;
-    height: 5.6rem;
+    height: 4.45rem;
 }
 
 .invite_top>img{
@@ -11,7 +11,7 @@
 .invite_text{
     text-align: center;
     letter-spacing: 0.01rem;
-    padding: 0 0.75rem;
+    padding: 0.2rem 0.75rem;
 }
 
 .invite_text>p:nth-child(1){
@@ -41,8 +41,9 @@
 
 .invite_bottom{
     width: 7.5rem;
+    color: #888;
     bottom: 0.5rem;
     position: absolute;
-    font-size: 0.3rem;
+    font-size: 0.25rem;
     text-align: center;
 }
