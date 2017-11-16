@@ -62,21 +62,26 @@
 .btn_02 {
     width: 6.15em;
     height: 1.5rem;
-    
+    line-height: 1.5rem;
     position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .btn_01>img,
 .btn_02>img {
     width: 100%;
     height: 100%;
+    float: left;
 }
 
 .btn_01>p,
 .btn_02>p {
-    top: 0.5rem;
+    /* top: 0.5rem; */
     left: 2.35rem;
     color: #fff;
+    float: left;
     font-size: 0.35rem;
     position: absolute;
 }

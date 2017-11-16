@@ -47,9 +47,9 @@ form{
     border: none;
     outline: none;
     -webkit-appearance:none;
-    line-height: 0.9rem;
+    line-height: 0.7rem;
     font-size: 0.3rem;
-    padding-left: 0.1rem;
+    padding: 0.1rem 0.1rem;
     letter-spacing: 0.01rem;
 }  
 
@@ -104,6 +104,10 @@ form{
     line-height: 1.05rem;
     background: #fe7077;
     border-radius: 1.05rem;
+}
+
+input{
+    -webkit-tap-highlight-color: transparent;
 }
 
 input[type="checkbox"] {

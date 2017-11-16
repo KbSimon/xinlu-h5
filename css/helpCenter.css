@@ -46,15 +46,18 @@
 .answer_img{
     float: left;
     width: 1.2rem;
-    height: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .question_img{
     width: 1.2rem;
     height: 0.6rem;
     float: left;
-    padding: 0.3rem 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0;
 }
 
 

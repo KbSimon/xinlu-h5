@@ -14,13 +14,14 @@
 
 .bottom{
     width: 7.5rem;
-    padding: 0.25rem 0;
+    padding: 0.26rem 0;
     background: #b7d1ff;
     text-align: center;
 }
 
 .load_01,
 .load_02{
+    display: block;
     margin: 0 auto;
     width: 5.05rem;
     height: 0.8rem;
