@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>邀请好友</title>
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/base.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/invite.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/xinlu-icon.ico">
+    <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="invite_top"></div>
+    <div class="invite_middle"></div>
+    <div class="invite_bottom"></div>
+    <div class="invite_title">
+        <!-- <div class="invite_btn">邀请好友</div> -->
+        <div class="invite_text">以上活动鑫路金融保留法律许可范围内的解释权</div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    var html = document.querySelector('html');
+    html.style.fontSize = html.offsetWidth / 750 * 100 + 'px';
+    addEventListener('resize', function () {
+        html.style.fontSize = html.offsetWidth / 750 * 100 + 'px';
+    }, false);
+    $(".invite_btn").click(function(){
+        app_android.yaoqing();
+    });
+</script>
