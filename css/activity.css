@@ -18,8 +18,17 @@
     background-size: 7.5rem 11.1rem; */
 }
 
+.part_03_title{
+    bottom: 0;
+    left: 0.5rem;
+    font-size: 0.28rem;
+    text-align: center;
+    position: absolute;
+}
+
 .award{
     background: url("../images/active_bg.png") center no-repeat;
+    background-size: 7.5rem 6.6rem;
 }
 
 .part_03{
@@ -43,6 +52,27 @@
     background-size: 7.5rem 4.4rem;
 }
 
+.part_02_title>p{
+    color: #fff;
+    text-align: center;
+    font-size: 0.28rem;
+}
+
+.part_02_title>p:first-of-type{
+    padding-top: 2rem;
+}
+
+.award_btn{
+    width: 2.7rem;
+    height: 0.5rem;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 0.35rem;
+    line-height: 0.5rem;
+    background: #af34fd;
+    text-align: center;
+    border-radius: 0.5rem;
+}
 
 
 .btn{
@@ -92,7 +122,7 @@
 
 .part_04{
     width: 7.5rem;
-    height: 5.3rem;
+    /* height: 5.3rem; */
     background: url("../images/activity_bg.png") center no-repeat;
     background-size: 7.5rem 5.6rem;
 }
@@ -100,4 +130,55 @@
 .part_04>p{
     text-align: center;
     font-size: 0.28rem;
+}
+
+.part_05{
+    position: relative;
+    background: #644aff;
+}
+
+.part_05_title{
+    height: 2rem;
+text-align: center;
+font-size: 0.28rem;
+padding-top: 0.3rem;
+}
+
+.recond{
+    height: 1.87rem;
+    background: url("../images/active_02.png") center no-repeat;
+    background-size: 7.5rem 1.87rem;
+}
+
+.record{
+    width: 6.9rem;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+.record>li{
+    text-align: center;
+}
+
+.record>li>div{
+    width: 2.3rem;
+    height: 1.15rem;
+    float: left;
+    white-space:normal;
+}
+
+.head{
+    color: #fff;
+    height: 1.15rem;
+    background: #ff8a4e;
+    line-height: 1.15rem;
+}
+
+.content{
+    height: 0.915rem;
+    font-size: 0.28rem;
+    color: #4936bb;
+    background: #fefee7;
+    padding-top: 0.2rem;
+    border-bottom: 1px solid #eaddb0;
 }
