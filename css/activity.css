@@ -12,10 +12,14 @@
 
 .part_02{
     width: 7.5rem;
-    height: 11.1rem;
+    height: 10.55rem;
     position: relative;
+    /* background: url("../images/active_bg.png") center no-repeat;
+    background-size: 7.5rem 11.1rem; */
+}
+
+.award{
     background: url("../images/active_bg.png") center no-repeat;
-    background-size: 7.5rem 11.1rem;
 }
 
 .part_03{
@@ -38,6 +42,8 @@
     background: url("../images/active_01.png") center no-repeat;
     background-size: 7.5rem 4.4rem;
 }
+
+
 
 .btn{
     width: 7.5rem;
