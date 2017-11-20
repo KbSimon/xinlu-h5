@@ -12,8 +12,10 @@
 
 .part_02{
     width: 7.5rem;
-    height: 8.3rem;
+    height: 11.1rem;
     position: relative;
+    background: url("../images/active_bg.png") center no-repeat;
+    background-size: 7.5rem 11.1rem;
 }
 
 .part_03{
@@ -29,6 +31,12 @@
     position: absolute;
     text-align: center;
     margin: 0 0.8rem;
+}
+
+.part_02_title{
+    height: 4.4rem;
+    background: url("../images/active_01.png") center no-repeat;
+    background-size: 7.5rem 4.4rem;
 }
 
 .btn{

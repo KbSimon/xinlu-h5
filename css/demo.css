@@ -1,0 +1,83 @@
+
+.dial_active{
+  width:6.15rem;
+  height: 6.15rem;;
+  margin:0 auto;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+.dial_all{
+  width:6.15rem;
+  height:6.15rem;
+  margin:0 auto;
+  position: relative;
+}
+.dial_deng{
+  width:6.05rem;
+  height:6.05rem;
+  background: url(../images/deng.gif) no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.dial_pan{
+  width: 5.44rem;
+  height: 5.44rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2.7rem;
+  margin-top: -2.7rem;
+  border-radius: 50%;
+  /* border: 0.1rem solid #ffffff; */
+}
+.dial_pan> img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 5.3rem;
+  vertical-align: middle;
+}
+.dial_zhen{
+  width:1.5rem;
+  height:2.2rem;
+  background: url(../images/yuan.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top:1.6rem;
+  left:2.35rem;
+}
+.dial_btn{
+  width:0.68rem;
+  height:0.69rem;
+  position: absolute;
+  top: 0.95rem;
+  left: 0.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dial_btn> img{
+  display: inline-block;
+  width: 0.68rem;
+  height: 0.69rem;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
