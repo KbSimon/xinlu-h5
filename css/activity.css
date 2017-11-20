@@ -74,6 +74,7 @@
     font-size: 0.28rem;
     bottom: 1.4rem;
     position: absolute;
+    top: 5rem;
     margin-left: 1.6rem;
 }
 
@@ -87,6 +88,7 @@
     width: 7.5rem;
     height: 5.3rem;
     background: url("../images/activity_bg.png") center no-repeat;
+    background-size: 7.5rem 5.6rem;
 }
 
 .part_04>p{
