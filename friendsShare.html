@@ -50,7 +50,6 @@
             </form>
             <div class="draw">领取红包</div>
             <div class="deal">
-
                 <input type="checkbox" id="deal_input" checked>
                 <label for="deal_input"> </label>
                 <a style="color:#666;">我同意按如下</a>
@@ -133,18 +132,6 @@
         } else {
             $(".draw").removeAttr("disabled").removeAttr("id");
             return true;
-            $("form").submit();
-            console.log(encode($(".password").val()));
-          
-            // $.ajax({
-            //     type: 'post',
-            //     dataType: 'json',
-            //     data: {},
-            //     url: '',
-            //     success: function(){
-            //         // window.location.href = "downloadApp.html";
-            //     }
-            // }) 
         }
     })
     // 点击立即注册时的判断
