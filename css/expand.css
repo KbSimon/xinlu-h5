@@ -1,61 +1,32 @@
-
-html,body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /* height: 100%; */
-}
-
-p{
-    margin: 0;
-}
-
-a{
-    color:#333;
-    text-decoration: none;
-}
-
-ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-
-.clearfloat:after{
-    display:block;
-    clear:both;
-    content:'';
-    visibility:hidden;
-    height:0
-    }
-.clearfloat{
-    zoom:1
-}
-.banner_01{
+.banner_01 {
     width: 750px;
     height: 537px;
 }
 
-.banner_01{
+.banner_01 {
     background: url("../images/expand/expand1_01.png") center no-repeat;
 }
 
-.register_01{
-    width: 100%;
+
+/* 注册表格 */
+
+.register_01 {
+    width: 750px;
     height: 700px;
+    position: relative;
 }
 
-.register_01{
+.register_01 {
     background: #58a8ff;
 }
 
-form{
+form {
     width: 615px;
     margin: 0 auto;
     position: relative;
 }
 
-.register_ul>li{
+.register_ul>li {
     height: 90px;
     overflow: hidden;
     background: #fff;
@@ -64,53 +35,53 @@ form{
     margin-bottom: 35px;
 }
 
-.register_ul>li:nth-of-type(2){
+.register_ul>li:nth-of-type(2) {
     width: 345px;
 }
 
-.register_ul>li:nth-of-type(2)>input{
+.register_ul>li:nth-of-type(2)>input {
     width: 60%;
 }
 
 .register_ul>li>div,
-.register_ul>li>input{
+.register_ul>li>input {
     float: left;
 }
 
-.register_ul>li>input{
+.register_ul>li>input {
     border: none;
     outline: none;
-    -webkit-appearance:none;
-    line-height: 70px;
     font-size: 30px;
-    padding: 10px 10px;
+    padding: 0 10px;
+    line-height: 90px;
     letter-spacing: 1px;
-}  
-
-.register_ul>li>div{
-    width: 90px;
-    height: 90px; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.register_ul>li>div>img{
+.register_ul>li>div {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.register_ul>li>div>img {
     padding-left: 20px;
 }
 
 .icon_01>img,
 .icon_03>img,
-.icon_04>img{
+.icon_04>img {
     width: 40px;
 }
 
-.icon_02>img{
+.icon_02>img {
     width: 50px;
 }
 
-
-.code_btn_01{
+.code_btn_01 {
     color: #fff;
     top: 125px;
     left: 380px;
@@ -123,11 +94,11 @@ form{
     border-radius: 90px;
 }
 
-.code_btn_01{
+.code_btn_01 {
     background: #ffa800;
 }
 
-.draw_01{
+.draw_01 {
     width: 615px;
     height: 105px;
     color: #fff;
@@ -138,13 +109,12 @@ form{
     border-radius: 105px;
 }
 
-.draw_01{
+.draw_01 {
     background: #ff661b;
 }
 
-input{
-    -webkit-tap-highlight-color: transparent;
-}
+
+/* 注册协议 */
 
 input[type="checkbox"] {
     display: none;
@@ -156,6 +126,8 @@ input[type="checkbox"] {
 
 .deal>input+label {
     top: 5px;
+    width: 6px;
+    height: 6px;
     margin-right: 5px;
     padding: 10px;
     border-radius: 5px;
@@ -177,7 +149,228 @@ input[type="checkbox"] {
     vertical-align: text-top;
 }
 
-.deal{
+.deal {
     text-align: center;
     font-size: 30px;
+}
+
+
+/* 内容 */
+
+.content {
+    width: 750px;
+    height: 1260px;
+    padding-top: 150px;
+    position: relative;
+    background: #58a8ff;
+}
+
+
+/* 右边的圈 */
+
+.bg_01 {
+    right: 0;
+    bottom: -100px;
+    z-index: 1;
+    position: absolute;
+}
+
+
+/* 左边的圈 */
+
+.bg_03 {
+    left: 0;
+    bottom: -60px;
+    position: absolute;
+}
+
+
+/* 产品介绍 */
+
+.bg_04{
+    width: 590px;
+    height: 116px;
+    margin: 0 auto;
+    background: url("../images/expand/expand1_08.png") center no-repeat;
+}
+
+.content_ul {
+    z-index: 999;
+    width: 700px;
+    height: 1135px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    padding-top: 50px;
+}
+
+
+/* 平台优势背景图 */
+
+.bg_02 {
+    left: 50px;
+    top: -58px;
+    width: 590px;
+    height: 116px;
+    position: absolute;
+    background: url("../images/expand/expand1_03.png") center no-repeat;
+}
+
+
+/* 平台优势 */
+
+.content_ul>li {
+    float: left;
+    width: 650px;
+    margin: 0 25px;
+    padding-top: 55px;
+    padding-bottom: 38px;
+    border-bottom: 1px dashed #ff9f65;
+}
+
+.content_ul>li:last-of-type {
+    border-bottom: none;
+}
+
+.left_li>div:first-of-type {
+    width: 210px;
+    height: 190px;
+    float: left;
+}
+
+.left_li>div:last-of-type {
+    float: left;
+    line-height: 2;
+    padding-left: 25px;
+    padding-top: 40px;
+}
+
+.img_01 {
+    background: url("../images/expand/expand1_04.png") center no-repeat;
+}
+
+.img_02 {
+    background: url("../images/expand/expand1_05.png") center no-repeat;
+}
+
+.img_03 {
+    background: url("../images/expand/expand1_06.png") center no-repeat;
+}
+
+.img_04 {
+    background: url("../images/expand/expand1_07.png") center no-repeat;
+}
+
+.right_li>div:first-of-type {
+    float: left;
+    line-height: 2;
+    text-align: right;
+    padding-top: 40px;
+}
+
+.right_li>div:last-of-type {
+    width: 210px;
+    height: 190px;
+    float: right;
+}
+
+.right_li>div:first-of-type>p:first-of-type,
+.left_li>div:last-of-type>p:first-of-type {
+    font-size: 32px;
+}
+
+.right_li>div:first-of-type>p:last-of-type,
+.left_li>div:last-of-type>p:last-of-type {
+    font-size: 24px;
+}
+
+
+/* 产品说明 */
+
+.product {
+    width: 750px;
+    height: 835px;
+    background: #58a8ff;
+}
+
+.product_ul{
+    width: 700px;
+    height: 300px;
+    margin: 50px auto 80px auto;
+}
+
+.product_ul>li{
+    float: left;
+    width: 223px;
+    height: 225px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding-top: 75px;
+}
+
+.product_ul>li:nth-of-type(2){
+    margin: 0 15px;
+}
+
+.bg_05{
+    left: 22px;
+    top: -13px;
+    width: 178px;
+    height: 81px;
+    color: #562600;
+    font-size: 30px;
+    position: absolute;
+
+    line-height: 70px;
+    font-weight: bold;
+    background: url("../images/expand/expand1_10.png") center no-repeat;
+}
+
+
+.product_ul>li>p{
+    line-height: 1.5;
+}
+
+.product_ul>li>p:nth-of-type(2n){
+    font-size: 24px;
+}
+
+.product_ul>li>p:nth-of-type(2n+1){
+    font-size: 42px;
+}
+
+.product_ul>li>p:nth-of-type(1),
+.product_ul>li>p:nth-of-type(2){
+    color: #ff9c00;
+}
+
+.product_ul>li>p:nth-of-type(3),
+.product_ul>li>p:nth-of-type(4){
+    color: #ff374a;
+}
+
+.product_ul>li>p:nth-of-type(3)>span{
+    font-size: 30px;
+}
+
+.to_register{
+    width: 615px;
+    height: 105px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 36px;
+    text-align: center;
+    line-height: 105px;
+    background: #ff661b;
+    border-radius: 105px;
+}
+
+.note{
+    color: #fff;
+    font-size: 24px;
+    padding-top: 90px;
+    text-align: center;
 }
