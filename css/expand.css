@@ -1,0 +1,150 @@
+.banner_01{
+    width: 750px;
+    height: 537px;
+}
+
+.banner_01{
+    background: url("../images/expand/expand1_01.png") center no-repeat;
+}
+
+.register_01{
+    width: 100%;
+    height: 700px;
+}
+
+.register_01{
+    background: #58a8ff;
+}
+
+form{
+    width: 615px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.register_ul>li{
+    height: 90px;
+    overflow: hidden;
+    background: #fff;
+    line-height: 90px;
+    border-radius: 90px;
+    margin-bottom: 35px;
+}
+
+.register_ul>li:nth-of-type(2){
+    width: 345px;
+}
+
+.register_ul>li:nth-of-type(2)>input{
+    width: 60%;
+}
+
+.register_ul>li>div,
+.register_ul>li>input{
+    float: left;
+}
+
+.register_ul>li>input{
+    border: none;
+    outline: none;
+    -webkit-appearance:none;
+    line-height: 70px;
+    font-size: 30px;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+}  
+
+.register_ul>li>div{
+    width: 90px;
+    height: 90px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register_ul>li>div>img{
+    padding-left: 20px;
+}
+
+.icon_01>img,
+.icon_03>img,
+.icon_04>img{
+    width: 40px;
+}
+
+.icon_02>img{
+    width: 50px;
+}
+
+
+.code_btn_01{
+    color: #fff;
+    top: 125px;
+    left: 380px;
+    width: 230px;
+    height: 90px;
+    position: absolute;
+    text-align: center;
+    line-height: 87px;
+    font-size: 30px;
+    border-radius: 90px;
+}
+
+.code_btn_01{
+    background: #ffa800;
+}
+
+.draw_01{
+    width: 615px;
+    height: 105px;
+    color: #fff;
+    margin: 40px auto;
+    font-size: 30px;
+    text-align: center;
+    line-height: 105px;
+    border-radius: 105px;
+}
+
+.draw_01{
+    background: #ff661b;
+}
+
+input{
+    -webkit-tap-highlight-color: transparent;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.deal>input:checked+label {
+    border: 1px solid #fe9c1c;
+}
+
+.deal>input+label {
+    top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e4e4e4;
+}
+
+.deal>input:checked+label::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 20px;
+    font-size: 20px;
+    color: #fe9c1c;
+    content: "\2713";
+    position: absolute;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.deal{
+    text-align: center;
+    font-size: 30px;
+}
