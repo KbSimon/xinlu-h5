@@ -1,4 +1,6 @@
-.banner_01 {
+.banner_01,
+.banner_02,
+.banner_03{
     width: 750px;
     height: 537px;
 }
@@ -7,10 +9,19 @@
     background: url("../images/expand/expand1_01.png") center no-repeat;
 }
 
+.banner_02{
+    background: url("../images/expand/expand2_01.png") center no-repeat;
+}
+
+.banner_03{
+    background: url("../images/expand/expand3_01.png") center no-repeat;
+}
 
 /* 注册表格 */
 
-.register_01 {
+.register_01,
+.register_02,
+.register_03 {
     width: 750px;
     height: 700px;
     position: relative;
@@ -18,6 +29,14 @@
 
 .register_01 {
     background: #58a8ff;
+}
+
+.register_02{
+    background: #a853e7;
+}
+
+.register_03{
+    background: #ffbb37;
 }
 
 form {
@@ -81,16 +100,19 @@ form {
     width: 50px;
 }
 
-.code_btn_01 {
+/* 获取验证码按钮 */
+.code_btn_01,
+.code_btn_02,
+.code_btn_03{
     color: #fff;
     top: 125px;
     left: 380px;
     width: 230px;
     height: 90px;
+    font-size: 28px;
     position: absolute;
     text-align: center;
     line-height: 87px;
-    font-size: 30px;
     border-radius: 90px;
 }
 
@@ -98,12 +120,16 @@ form {
     background: #ffa800;
 }
 
+.code_btn_02{
+    background: #4eaeff;
+}
+
 .draw_01 {
     width: 615px;
     height: 105px;
     color: #fff;
     margin: 40px auto;
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
     line-height: 105px;
     border-radius: 105px;
@@ -157,12 +183,25 @@ input[type="checkbox"] {
 
 /* 内容 */
 
-.content {
+.content_01,
+.content_02,
+.content_03 {
     width: 750px;
     height: 1260px;
     padding-top: 150px;
     position: relative;
+}
+
+.content_01{
     background: #58a8ff;
+}
+
+.content_02{
+    background: #a853e7;
+}
+
+.content_03{
+    background: #ffbb37;
 }
 
 
@@ -187,11 +226,25 @@ input[type="checkbox"] {
 
 /* 产品介绍 */
 
-.bg_04{
+.bg_04,
+.bg_07,
+.bg_09{
     width: 590px;
     height: 116px;
     margin: 0 auto;
+   
+}
+
+.bg_04{
     background: url("../images/expand/expand1_08.png") center no-repeat;
+}
+
+.bg_07{
+    background: url("../images/expand/expand2_03.png") center no-repeat;
+}
+
+.bg_09{
+    background: url("../images/expand/expand3_03.png") center no-repeat;
 }
 
 .content_ul {
@@ -208,15 +261,27 @@ input[type="checkbox"] {
 
 /* 平台优势背景图 */
 
-.bg_02 {
+.bg_02,
+.bg_06,
+.bg_08{
     left: 50px;
     top: -58px;
     width: 590px;
     height: 116px;
     position: absolute;
+}
+
+.bg_02{
     background: url("../images/expand/expand1_03.png") center no-repeat;
 }
 
+.bg_06{
+    background: url("../images/expand/expand2_02.png") center no-repeat;
+}
+
+.bg_08{
+    background: url("../images/expand/expand3_02.png") center no-repeat;
+}
 
 /* 平台优势 */
 
@@ -288,10 +353,23 @@ input[type="checkbox"] {
 
 /* 产品说明 */
 
-.product {
+.product_01,
+.product_02,
+.product_03{
     width: 750px;
     height: 835px;
+}
+
+.product_01{
     background: #58a8ff;
+}
+
+.product_02{
+    background: #a853e7;
+}
+
+.product_03{
+    background: #ffbb37;
 }
 
 .product_ul{
@@ -315,7 +393,8 @@ input[type="checkbox"] {
     margin: 0 15px;
 }
 
-.bg_05{
+.bg_05,
+.bg_10{
     left: 22px;
     top: -13px;
     width: 178px;
@@ -323,12 +402,17 @@ input[type="checkbox"] {
     color: #562600;
     font-size: 30px;
     position: absolute;
-
     line-height: 70px;
     font-weight: bold;
+}
+
+.bg_05{
     background: url("../images/expand/expand1_10.png") center no-repeat;
 }
 
+.bg_10{
+    background: url("../images/expand/expand3_04.png") center no-repeat;
+}
 
 .product_ul>li>p{
     line-height: 1.5;
