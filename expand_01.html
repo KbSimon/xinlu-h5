@@ -122,6 +122,14 @@
         <div class="to_register">马上注册</div>
         <p class="note">如有任何疑问，拨打客服电话：400-087-0808</p>
     </div>
+    <div class="mask">
+    </div>
+    <div class="download">
+        <div class="top">
+        </div>
+        <div class="down_img_01"></div>
+    </div>
+    <div class="close_btn"></div>
 </body>
 
 </html>
@@ -129,4 +137,11 @@
     var phoneScale = parseInt(window.screen.width) / 750;
     document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
         phoneScale + ', target-densitydpi=device-dpi">');
+
+    // 关闭弹窗
+    $(".close_btn").click(function(){
+        $(".mask").hide();
+        $(".download").hide();
+        $(".close_btn").hide();
+    })
 </script>

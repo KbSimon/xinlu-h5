@@ -1,3 +1,36 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:'';
+    visibility:hidden;
+    height:0
+    }
+.clearfloat{
+    zoom:1
+}
+
 .banner_01,
 .banner_02,
 .banner_03{
@@ -457,4 +490,58 @@ input[type="checkbox"] {
     font-size: 24px;
     padding-top: 90px;
     text-align: center;
+}
+
+
+/* 弹窗 */
+.mask{
+    width: 750px;
+    height: 100%;
+    background: #666;
+    opacity: 0.5;
+}
+
+.mask,
+.download,
+.close_btn{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    position: fixed;
+}
+
+/* 下载弹窗 */
+.download{
+    top: 25%;
+    width: 600px;
+    height: 575px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.top{
+    width: 600px;
+    height: 45px;
+    background: url("../images/expand/mask_01.png") center no-repeat;
+}
+
+.down_img_01{
+    top: 10px;
+    left: 160px;
+    width: 267px;
+    height: 347px;
+    position: absolute;
+    background: url("../images/expand/mask_08.png") center no-repeat;
+}
+
+/* 关闭按钮 */
+.close_btn{ 
+    top: 75%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    background: url("../images/expand/mask_07.png") center no-repeat;
 }
