@@ -2,7 +2,6 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
-    /* height: 100%; */
 }
 
 p{
@@ -196,7 +195,7 @@ input[type="checkbox"] {
 }
 
 .deal>input:checked+label::after {
-    top: 0;
+    top: 3px;
     left: 0;
     width: 100%;
     line-height: 20px;
@@ -503,17 +502,22 @@ input[type="checkbox"] {
 
 .mask,
 .download,
-.close_btn{
+.close_btn,
+.fall_register,
+.success_register{
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
     z-index: 9999;
     position: fixed;
+    display: none;
 }
 
-/* 下载弹窗 */
-.download{
+/* 注册失败、成功、重复注册弹窗 */
+.download,
+.fall_register,
+.success_register{
     top: 25%;
     width: 600px;
     height: 575px;
@@ -528,14 +532,86 @@ input[type="checkbox"] {
     background: url("../images/expand/mask_01.png") center no-repeat;
 }
 
-.down_img_01{
-    top: 10px;
+.bottom{
+    width: 600px;
+    height: 535px;
+    position: relative;
+}
+
+.down_img_01,
+.fall_img_01,
+.register_img_01{
     left: 160px;
     width: 267px;
     height: 347px;
-    position: absolute;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+.down_img_01{
     background: url("../images/expand/mask_08.png") center no-repeat;
 }
+
+.register_img_01{
+    margin-top: -60px;
+    background: url("../images/expand/mask_03.png") center no-repeat;
+}
+
+.fall_img_01{
+    margin-top: 50px;
+    height: 229px;
+    background: url("../images/expand/mask_02.png") center no-repeat;
+}
+
+.down_img_02,
+.register_img_02{
+    top: 327px;
+    width: 294px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -30px;   
+} 
+
+.down_img_02{
+    background: url("../images/expand/mask_05.png") center no-repeat;
+}
+
+.register_img_02{
+    width: 418px;
+    background: url("../images/expand/mask_04.png") center no-repeat; 
+}
+
+/* 提示 */
+.error_01{
+    color: #592d94;
+    font-size: 26px;
+    line-height: 4;
+    text-align: center;
+}
+
+.error_02{
+    color: #ff543c;
+    font-size: 30px;
+    line-height: 4;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 跳转按钮*/
+.down_btn,
+.fall_btn,
+.success_btn{
+    width: 302px;
+    height: 60px;
+    color: #fff;
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 60px;
+    background: url("../images/expand/mask_06.png") center no-repeat;
+}
+
 
 /* 关闭按钮 */
 .close_btn{ 

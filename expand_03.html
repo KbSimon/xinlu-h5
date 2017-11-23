@@ -4,16 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>推广注册</title>
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/base.css">
-    <link rel="stylesheet" href="css/expand.css">
-    <link rel="stylesheet" href="css/expand_01.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/expand.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/xinlu-icon.ico">
     <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="banner_03"></div>
-    <div class="register_03" id="register">
+    <div class="banner_03" id="register"></div>
+    <div class="register_03">
         <form action="" method="post">
             <ul class="register_ul">
                 <li>
@@ -101,27 +99,67 @@
                 <div class="bg_10">鑫火</div>
                 <p>10.2%</p>
                 <p>预期年化</p>
-                <p>100<span>元</span></p>
+                <p>100
+                    <span>元</span>
+                </p>
                 <p>起投金额</p>
             </li>
             <li>
                 <div class="bg_10">鑫手标</div>
                 <p>13%</p>
                 <p>预期年化</p>
-                <p>100<span>元</span></p>
+                <p>100
+                    <span>元</span>
+                </p>
                 <p>起投金额</p>
             </li>
             <li>
                 <div class="bg_10">鑫享</div>
                 <p>11.5%</p>
                 <p>预期年化</p>
-                <p>100<span>元</span></p>
+                <p>100
+                    <span>元</span>
+                </p>
                 <p>起投金额</p>
             </li>
         </ul>
         <div class="to_register">马上注册</div>
         <p class="note">如有任何疑问，拨打客服电话：400-087-0808</p>
     </div>
+    <!-- 遮罩层 -->
+    <div class="mask">
+    </div>
+    <!-- 已经注册的弹窗 -->
+    <div class="download" style="display:none;">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="down_img_01"></div>
+            <div class="down_img_02"></div>
+            <p class="error_01">下载APP一起玩吧~</p>
+            <div class="down_btn">立即下载</div>
+        </div>
+    </div>
+    <!-- 注册成功的弹窗 -->
+    <div class="success_register" style="display:none;">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="register_img_01"></div>
+            <div class="register_img_02"></div>
+            <p class="error_01">这588元红包是你的啦~</p>
+            <div class="success_btn">立即登录APP查看</div>
+        </div>
+    </div>
+    <!-- 注册失败的弹窗 -->
+    <div class="fall_register">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="fall_img_01"></div>
+            <p class="error_02"></p>
+            <div class="fall_btn">确定</div>
+        </div>
+    </div>
+    <!-- 底部×号 -->
+    <div class="close_btn"></div>
 </body>
 
 </html>
@@ -129,4 +167,103 @@
     var phoneScale = parseInt(window.screen.width) / 750;
     document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
         phoneScale + ', target-densitydpi=device-dpi">');
+    // 点击底部×号关闭弹窗
+    $(".close_btn").click(function () {
+        $(".mask").hide();
+        $(".download").hide();
+        $(".close_btn").hide();
+        $(".fall_register").hide();
+        $(".success_register").hide();
+    });
+
+    // 注册不成功关闭弹窗
+    $(".fall_btn").click(function () {
+        $(".mask").hide();
+        $(".close_btn").hide();
+        $(".fall_register").hide();
+    });
+
+    // 立即下载跳转到下载引导页
+    $(".down_btn").click(function () {
+        window.location.href = "http://xinluhtml.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/downloadApp.html";
+    });
+
+    // 立即登录APP查看
+    $(".success_btn").click(function () {
+        window.location.href = "http://xinluhtml.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/downloadApp.html";
+    });
+
+    // 马上注册跳转
+    $(".to_register").click(function () {
+        window.location.href = "#register"
+    });
+
+    // 注册失败后弹窗的显示
+    function faill() {
+        $(".mask").show();
+        $(".close_btn").show();
+        $(".fall_register").show();
+    }
+
+    // 注册成功后弹窗的显示
+    function success() {
+        $(".mask").show();
+        $(".close_btn").show();
+        $(".success_register").show();
+    }
+
+    // 重复注册弹窗的显示
+    function again() {
+        $(".mask").show();
+        $(".download").show();
+        $(".close_btn").show();
+    }
+
+    // 马上领取点击后的判断
+    $(".draw_01").click(function () {
+        // 判断手机号码是否为空
+        if ($(".mobile").val() == "") {
+            faill();
+            $(".error_02").text("手机号码不能为空！");
+        }
+        // 判断手机号码长度是否小于11位
+        else if ($(".mobile").val().length < 11) {
+            faill();
+            $(".error_02").text("手机号码长度不能小于11位！");
+        }
+        // 判断验证码是否为空
+        else if ($(".code").val() == "") {
+            faill();
+            $(".error_02").text("验证码不能为空！");
+        }
+        // 判断密码是否为空
+        else if ($(".password").val() == "") {
+            faill();
+            $(".error_02").text("登录密码不能为空！")
+        }
+        // 判断是否输入第二次密码
+        else if ($(".confirm_pawwsprd").val() == "") {
+            faill();
+            $(".error_02").text("请再次确认登录密码！")
+        }
+        // 判断第一次的密码长度
+        else if ($(".password").val().length > 20 || $(".password").val().length < 6) {
+            faill();
+            $(".error_02").text("登录密码长度为6-20位！")
+        }
+        // 判断第二次密码的长度
+        else if ($(".confirm_pawwsprd").val().length > 20 || $(".confirm_pawwsprd").val().length < 6) {
+            faill();
+            $(".error_02").text("确认密码长度为6-20位！")
+        }
+        // 判断两次密码是否一致
+        else if ($(".password").val() != $(".confirm_pawwsprd").val()) {
+            faill();
+            $(".error_02").text("两次密码不一致！")
+        }
+        // 注册成功
+        else {
+            success();
+        }
+    })
 </script>
