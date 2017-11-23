@@ -193,7 +193,7 @@
     });
 
     // 注册失败后弹窗的显示
-    function faill() {
+    function fall() {
         $(".mask").show();
         $(".close_btn").show();
         $(".fall_register").show();
@@ -217,42 +217,42 @@
     $(".draw_01").click(function () {
         // 判断手机号码是否为空
         if ($(".mobile").val() == "") {
-            faill();
+            fall();
             $(".error_02").text("手机号码不能为空！");
         }
-        // 判断手机号码长度是否小于11位
-        else if ($(".mobile").val().length < 11) {
-            faill();
-            $(".error_02").text("手机号码长度不能小于11位！");
+        // 判断手机号码格式
+        else if (!/^(13|15|18|14|17)[0-9]{9}$/.test($(".mobile").val())) {
+            fall();
+            $(".error_02").text("手机号码格式不正确！");
         }
         // 判断验证码是否为空
         else if ($(".code").val() == "") {
-            faill();
+            fall();
             $(".error_02").text("验证码不能为空！");
         }
         // 判断密码是否为空
         else if ($(".password").val() == "") {
-            faill();
+            fall();
             $(".error_02").text("登录密码不能为空！")
         }
         // 判断是否输入第二次密码
         else if ($(".confirm_pawwsprd").val() == "") {
-            faill();
+            fall();
             $(".error_02").text("请再次确认登录密码！")
         }
         // 判断第一次的密码长度
         else if ($(".password").val().length > 20 || $(".password").val().length < 6) {
-            faill();
+            fall();
             $(".error_02").text("登录密码长度为6-20位！")
         }
         // 判断第二次密码的长度
         else if ($(".confirm_pawwsprd").val().length > 20 || $(".confirm_pawwsprd").val().length < 6) {
-            faill();
+            fall();
             $(".error_02").text("确认密码长度为6-20位！")
         }
         // 判断两次密码是否一致
         else if ($(".password").val() != $(".confirm_pawwsprd").val()) {
-            faill();
+            fall();
             $(".error_02").text("两次密码不一致！")
         }
         // 注册成功
