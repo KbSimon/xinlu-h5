@@ -141,19 +141,24 @@ form {
     left: 380px;
     width: 230px;
     height: 90px;
+    outline: none;
     font-size: 28px;
     position: absolute;
     text-align: center;
     line-height: 87px;
     border-radius: 90px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .code_btn_01 {
     background: #ffa800;
+    border: 1px solid #ffa800;
 }
 
 .code_btn_02{
     background: #4eaeff;
+    border: 1px solid #4eaeff;
 }
 
 .draw_01 {
