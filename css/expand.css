@@ -34,19 +34,22 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
 .banner_02,
 .banner_03{
     width: 750px;
-    height: 537px;
+    height: 536px;
 }
 
 .banner_01 {
-    background: url("../images/expand/expand1_01.png") center no-repeat;
+    border-bottom: 2px solid #58a8ff ;
+    background: #58a8ff url("../images/expand/expand1_01.png") center no-repeat;
 }
 
 .banner_02{
-    background: url("../images/expand/expand2_01.png") center no-repeat;
+    border-bottom: 2px solid #a85be7;
+    background: #a85be7 url("../images/expand/expand2_01.png") center no-repeat;
 }
 
 .banner_03{
-    background: url("../images/expand/expand3_01.png") center no-repeat;
+    border-bottom: 2px solid #ffb33b;
+    background: #ffb33b url("../images/expand/expand3_01.png") center no-repeat;
 }
 
 /* 注册表格 */
@@ -57,18 +60,22 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
     width: 750px;
     height: 700px;
     position: relative;
+    margin-top: -2px;
 }
 
 .register_01 {
     background: #58a8ff;
+    border-bottom: 2px solid #58a8ff;
 }
 
 .register_02{
-    background: #a853e7;
+    background: #a85be7;
+    border-bottom: 2px solid #a85be7;
 }
 
 .register_03{
-    background: #ffbb37;
+    background: #ffb33b;
+    border-bottom: 2px solid #ffb33b;
 }
 
 form {
@@ -231,14 +238,20 @@ input[type="checkbox"] {
 
 .content_01{
     background: #58a8ff;
+    border-top: 5px solid #58a8ff;
+    border-bottom: 5px solid #58a8ff;
 }
 
 .content_02{
-    background: #a853e7;
+    background: #a85be7;
+    border-top: 5px solid #a85be7;
+    border-bottom: 5px solid #a85be7;
 }
 
 .content_03{
-    background: #ffbb37;
+    background: #ffb33b;
+    border-top: 5px solid #ffb33b;
+    border-bottom: 5px solid #ffb33b;
 }
 
 
@@ -399,14 +412,17 @@ input[type="checkbox"] {
 
 .product_01{
     background: #58a8ff;
+    border-top: 5px solid #58a8ff;
 }
 
 .product_02{
-    background: #a853e7;
+    background: #a85be7;
+    border-top: 5px solid #a85be7;
 }
 
 .product_03{
-    background: #ffbb37;
+    background: #ffb33b;
+    border-top: 5px solid #ffb33b;
 }
 
 .product_ul{
