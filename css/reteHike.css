@@ -33,12 +33,70 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
 .banner{
     width: 750px;
     height: 395px;
-    /* border-bottom: 5px solid #f8c633; */
-    background: url("../images/reteHike/img_01.png") center no-repeat;
+    background: #f8c633 url("../images/reteHike/img_01.png") center no-repeat;
 }
 
 .part_01{
     width: 750px;
     height: 782px;
-    background: url("../images/reteHike/img_02.png") center no-repeat;
+    background: #f8c633 url("../images/reteHike/img_02.png") center no-repeat;
 }
+
+.part_02{
+    width: 750px;
+    height: 1666px;
+    background: #f8c633 url("../images/reteHike/img_03.png") center no-repeat;
+}
+
+.part_03{
+    width: 750px;
+    height: 962px;
+    background: #f8c633 url("../images/reteHike/img_04.png") center no-repeat;
+}
+
+.title{
+    top: 1480px;
+    width: 750px;
+    height: 186px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 609px;
+    height: 146px;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 96px;
+    font-size: 40px;
+    background: url("../images/reteHike/img_05.png") center no-repeat;
+}
+
+.title>p{
+    color: #fd4c18;
+    font-size: 24px;
+}
+
+.text{
+    color: #fd4c18;
+    padding: 165px 50px 0px 50px;
+}
+
+section{
+    margin-bottom: 55px;
+}
+
+section>p:first-of-type{
+    font-size: 30px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+section>p:last-of-type{
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+
+
