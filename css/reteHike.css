@@ -1,0 +1,44 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:'';
+    visibility:hidden;
+    height:0
+    }
+.clearfloat{
+    zoom:1
+}
+
+.banner{
+    width: 750px;
+    height: 395px;
+    border-bottom: 5px solid #f8c633;
+    background: url("../images/reteHike/img_01.png") center no-repeat;
+}
+
+.part_01{
+    width: 750px;
+    height: 782px;
+    background: url("../images/reteHike/img_02.png") center no-repeat;
+}
