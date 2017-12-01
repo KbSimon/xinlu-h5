@@ -33,7 +33,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
 .banner{
     width: 750px;
     height: 395px;
-    border-bottom: 5px solid #f8c633;
+    /* border-bottom: 5px solid #f8c633; */
     background: url("../images/reteHike/img_01.png") center no-repeat;
 }
 
