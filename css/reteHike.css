@@ -98,5 +98,37 @@ section>p:last-of-type{
     font-size: 24px;
 }
 
+.mask{
+    width: 750px;
+    height: 100%;
+    background: #666;
+    opacity: 0.5;
+}
 
+.mask,
+.mask_bg,
+.close_btn{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+}
 
+.mask_bg{
+    top: 30%;
+    width: 640px;
+    height: 520px;
+    margin: 0 auto;
+    background: url("../images/reteHike/img_06.png") center no-repeat;
+}
+
+.close_btn{ 
+    top: 75%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    background: url("../images/expand/mask_07.png") center no-repeat;
+}
