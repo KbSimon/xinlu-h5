@@ -69,4 +69,18 @@
     $(".close_btn").click(function(){
         hide();
     });
+
+    let date1 = new Date(2017,11,7)
+    let date2 = new Date();
+
+    console.log(date1);
+    console.log(date2);
+    
+    if (date2<date1) {
+        $(".btn").click(function(){
+            show();
+        })
+    } else {
+        
+    }
 </script>
