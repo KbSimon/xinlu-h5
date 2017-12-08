@@ -42,22 +42,22 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
 
 .part_01{
     height: 400px;
-    background: url("../images/activity_01/img_01.png") center no-repeat;
+    background: #ffb030 url("../images/activity_01/img_01.png") center no-repeat;
 }
 
 .part_02{
     height: 476px;
-    background: url("../images/activity_01/img_02.png") center no-repeat;
+    background: #ffb030  url("../images/activity_01/img_02.png") center no-repeat;
 }
 
 .part_03{
     height: 1275px;
-    background: url("../images/activity_01/img_03.png") center no-repeat;
+    background: #ffb030  url("../images/activity_01/img_03.png") center no-repeat;
 }
 
 .part_04{
     height: 387px;
-    background: url("../images/activity_01/img_04.png") center no-repeat;
+    background: #ffb030  url("../images/activity_01/img_04.png") center no-repeat;
 }
 
 
@@ -80,15 +80,15 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
 }
 
 .bottom>p:first-of-type{
-    top: 30px;
-    font-size: 20px;
-    letter-spacing: 3px;
+    top: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
     position: relative;
 }
 
 .bottom>p:last-of-type{
     top: 100px;
-    font-size: 16px;
+    font-size: 20px;
     position: relative;
     letter-spacing: 2px;
 }
