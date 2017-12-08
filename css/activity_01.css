@@ -1,3 +1,35 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:'';
+    visibility:hidden;
+    height:0
+    }
+.clearfloat{
+    zoom:1
+}
 
 .part_01,
 .part_02,
