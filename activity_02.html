@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <title>圣诞活动</title>
@@ -7,17 +8,132 @@
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/xinlu-icon.ico">
     <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <audio src="images/activity_02/1.mp3" autoplay="autoplay"></audio>
+    <!-- <audio src="images/activity_02/1.mp3" autoplay="autoplay"></audio> -->
     <div class="part_01"></div>
     <div class="part_02"></div>
-    <div class="part_03"></div>
-    <div class="part_04"></div>
-    <div class="part_05"></div>
+    <div class="part_03">
+        <div class="sign">
+            <p class="sign_p1">活动期间，用户每日上线进行签到，累计
+                <br>签到7天及以上的用户，可在2018年1月1日
+                <br>领取福袋</p>
+            <ul class="sign_ul clearfloat">
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">1天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">2天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">3天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">4天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">5天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">6天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">7天</p>
+                </li>
+                <li>
+                    <img src="images/activity_02/img_07.png">
+                    <p class="sign_p2">8天</p>
+                </li>
+            </ul>
+            <div class="sign_button clearfloat">
+                <input type="button" class="sign_btn1" value="每日签到">
+                <input type="button" class="sign_btn2" value="兑换礼包">
+            </div>
+            <div class="sign_text clearfloat">
+                <div class="time1">
+                    <p class="sign_p3">签到时间</p>
+                    <p class="sign_p5">2017/12/24-2017-12-31</p>
+                </div>
+                <div class="time2">
+                    <p class="sign_p4">兑换时间</p>
+                    <p class="sign_p6">2018/01/01</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part_04">
+        <div class="paket">
+            <p class="sign_p1">活动期间，鑫路金融每日为用户备上豪礼，
+                <br>坐等各位官人领取，保证领到你手软。</p>
+            <ul class="paket_ul">
+                <li>
+                    <p class="sign_p7">立即领取</p>
+                </li>
+                <li>
+                    <p class="sign_p8">立即领取</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="part_05">
+        <div class="rete">
+            <p class="sign_p1">活动期间，平台每日推出活动标的，
+                <br>每日一标，10:00开抢！</p>
+            <div class="rete_button">
+                <input type="button" class="rete_btn" value="立即开抢">
+            </div>
+        </div>
+
+    </div>
+    <div class="mask"></div>
+    <!-- 签到成功 -->
+    <div class="success_01" style="">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 福袋1 -->
+    <div class="award_01" style="">
+        <div class="close_btn" style="top:160px;"></div>
+    </div>
+    <!-- 福袋2 -->
+    <div class="award_02" style="">
+        <div class="close_btn" style="top:160px;"></div>
+    </div>
+    <!-- 福袋3 -->
+    <div class="award_03" style="">
+        <div class="close_btn" style="top:280px;"></div>
+    </div>
+    <!-- 领取成功 -->
+    <div class="success_02" style="">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 活动未开始 -->
+    <div class="NoStart" style="">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 时间未到 -->
+    <div class="NoBegin">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 没有领取条件 -->
+    <div class="NoTerm" style="">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 活动已结束 -->
+    <div class="end" style="">
+        <div class="close_btn"></div>
+    </div>
 </body>
+
 </html>
 <script>
     var phoneScale = parseInt(window.screen.width) / 750;
     document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
-        phoneScale +',target-densitydpi=device-dpi">');
+        phoneScale + ',target-densitydpi=device-dpi">');
 </script>
