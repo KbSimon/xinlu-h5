@@ -16,12 +16,17 @@
     <div class="part_04">
         <div class="bottom">
             <div class="btn">
-                <a href=""></a>
             </div>
             <p>注：“终结者有礼”活动长期有效，红包可重复获得
                 <br>红包具体使用请查看红包说明</p>
             <p>以上活动鑫路金融保留法律范围内的解释权</p>
         </div>
+    </div>
+    <div class="mask">
+    </div>
+    <div class="active">
+    </div>
+    <div class="close_btn">
     </div>
 </body>
 
@@ -29,5 +34,17 @@
 <script>
     var phoneScale = parseInt(window.screen.width) / 750;
     document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
-        phoneScale + ', target-densitydpi=device-dpi">');
+        phoneScale +',target-densitydpi=device-dpi">');
+
+    $(".btn").click( function () {
+        $(".mask").show();
+        $(".active").show();
+        $(".close_btn").show();
+    })
+
+     $(".close_btn").click(function(){
+        $(".mask").hide();
+        $(".active").hide();
+        $(".close_btn").hide();
+     })
 </script>

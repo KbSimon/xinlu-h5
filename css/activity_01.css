@@ -69,7 +69,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
     position: relative;
 }
 
-.btn>a{
+.btn{
     top: 20px;
     display: block;
     width: 522px;
@@ -92,3 +92,41 @@ ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
     position: relative;
     letter-spacing: 2px;
 }
+
+.mask{
+    width: 750px;
+    height: 100%;
+    background: #666;
+    opacity: 0.5;
+}
+
+.mask,
+.active,
+.close_btn{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+}
+
+
+.active{
+    top: 25%;
+    width: 659px;
+    height: 594px;
+    margin: 0 auto;
+    background: url("../images/activity_01/img_06.png") center no-repeat;
+}
+
+.close_btn{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    top: 80%;
+    background: url("../images/activity_01/img_07.png") center no-repeat;
+}
+
+
