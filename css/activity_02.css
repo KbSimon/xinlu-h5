@@ -121,6 +121,21 @@ input {
     text-align: center;
 }
 
+.qdbg,
+.sign_bg{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.sign_bg{
+    background: url("../images/activity_02/img_07.png") center no-repeat;
+}
+
+.qdbg{
+    background: url("../images/activity_02/img_06.png") center no-repeat;
+}
+
 .sign_p2 {
     font-size: 28px;
     line-height: 2;
@@ -205,6 +220,10 @@ input {
     position: absolute;
 }
 
+.unchoose{
+    color: #c8b79a;
+}
+
 .rete {
     margin-top: 230px;
     position: absolute;
@@ -225,8 +244,10 @@ input {
     opacity: 0.5;
 }
 
+.get,
 .end,
 .mask,
+.error,
 .NoTerm,
 .NoStart,
 .NoBegin,
@@ -241,9 +262,9 @@ input {
     bottom: 0px;
     width: 750px;
     z-index: 9999;
+    display: none;    
     margin: 0 auto;
     position: fixed;
-    display: none;
 }
 
 .close_btn {
@@ -288,6 +309,7 @@ input {
     background: url("../images/activity_02/award_03.png") center no-repeat;
 }
 
+.get,
 .end,
 .NoTerm,
 .NoStart{
@@ -295,8 +317,33 @@ input {
     height: 652px;
 }
 
+.get{
+    background: url("../images/activity_02/get.png") center no-repeat; 
+}
+
 .end{
     background: url("../images/activity_02/end.png") center no-repeat;
+}
+
+.error,
+.NoBegin{
+    top: 20%;
+    height: 572px;
+}
+
+.error_text{
+    width: 550px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #ffc600;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 350px;
+   
+}
+
+.error{
+    background: url("../images/activity_02/error.png") center no-repeat;
 }
 
 .NoTerm{
@@ -307,8 +354,6 @@ input {
     background: url("../images/activity_02/NoStart.png") center no-repeat;
 }
 
-.NoBegin{
-    top: 20%;
-    height: 572px;
+.NoBegin{ 
     background: url("../images/activity_02/NoBegin.png") center no-repeat;
 }
