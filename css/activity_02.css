@@ -57,12 +57,12 @@ input {
 }
 
 .part_01 {
-    height: 400px;
-    background: url("../images/activity_02/img_01.png") center no-repeat;
+    height: 493px;
+    background: #268175 url("../images/activity_02/img_01.png") center no-repeat;
 }
 
 .part_02 {
-    height: 341px;
+    height: 243px;
     background: #268175 url("../images/activity_02/img_02.png") center no-repeat;
 }
 

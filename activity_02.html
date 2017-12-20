@@ -264,8 +264,9 @@
             NoStart();
         } else if (date >= end) {
             end();
-        }
-
+        } else if (start <= date < end) {
+            success_01();
+        };
 
         // $.ajax({
         //     type: 'POST',
@@ -292,10 +293,14 @@
     //  兑换红包   
     $(".sign_btn2").click(function () {
         // 活动未开始 
-        if (date < start) {
+        if (date < end) {
             NoStart();
-        } else if (date >= end) {
+        } else if (date > end) {
             end();
+        } else if (date = end) {
+           
+            // award_01();
+            success_03();
         };
 
 
