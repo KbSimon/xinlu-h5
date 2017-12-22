@@ -30,9 +30,12 @@ dd {
     list-style: none;
 }
 
-input {
+input,
+button{
     border: none;
     outline: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .clearfloat:after {
@@ -105,6 +108,7 @@ input {
 .sign_p6 {
     color: #B89362;
     text-align: center;
+    line-height: 1.5;
 }
 
 .sign_p1 {
@@ -194,29 +198,36 @@ input {
 }
 
 .paket_ul>li {
-    width: 100%;
+    width: 540px;
     height: 202px;
+    margin: 0 auto;
     position: relative;
+    /* overflow: hidden; */
 }
 
 .paket_ul>li:first-of-type {
     margin-bottom: 20px;
     background: url("../images/activity_02/img_10.png") center no-repeat;
+    background-size: 100% 100%;
 }
 
 .paket_ul>li:last-of-type {
     background: url("../images/activity_02/img_11.png") center no-repeat;
+    background-size: 100% 100%;
 }
 
 .sign_p7,
 .sign_p8 {
-    top: 50px;
-    right: 80px;
-    width: 30px;
-    height: 100px;
+    top: 85px;
+    right: 38px;
+    height: 30px;
+    float: right;
+    width: 120px;
     font-size: 24px;
     color: #f5481a;
     line-height: 1;
+    margin-left: -4px;
+    text-align: center;
     position: absolute;
 }
 

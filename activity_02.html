@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>圣诞活动</title>
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/activity_02.css">
+    <link rel="stylesheet" href="css/activity_02.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/activity_02.css"> -->
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/xinlu-icon.ico">
     <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 </head>
@@ -19,37 +20,45 @@
                 <br>签到7天及以上的用户，可在2018年1月1日
                 <br>领取福袋</p>
             <ul class="sign_ul clearfloat">
-                <li class="date19">
+                <li class="date24">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">1天</p>
+                    <p class="sign_p2">
+                        <span>24</span>日</p>
                 </li>
                 <li class="date25">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">2天</p>
+                    <p class="sign_p2">
+                        <span>25</span>日</p>
                 </li>
                 <li class="date26">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">3天</p>
+                    <p class="sign_p2">
+                        <span>26</span>日</p>
                 </li>
                 <li class="date27">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">4天</p>
+                    <p class="sign_p2">
+                        <span>27</span>日</p>
                 </li>
                 <li class="date28">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">5天</p>
+                    <p class="sign_p2">
+                        <span>28</span>日</p>
                 </li>
                 <li class="date29">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">6天</p>
+                    <p class="sign_p2">
+                        <span>29</span>日</p>
                 </li>
                 <li class="date30">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">7天</p>
+                    <p class="sign_p2">
+                        <span>30</span>日</p>
                 </li>
                 <li class="date31">
                     <div class="sign_bg"></div>
-                    <p class="sign_p2">8天</p>
+                    <p class="sign_p2">
+                        <span>31</span>日</p>
                 </li>
             </ul>
             <div class="sign_button clearfloat">
@@ -74,10 +83,10 @@
                 <br>坐等各位官人领取，保证领到你手软。</p>
             <ul class="paket_ul">
                 <li>
-                    <p class="sign_p7">立即领取</p>
+                    <input type="button" class="sign_p7" value="立即领取">
                 </li>
                 <li>
-                    <p class="sign_p8">立即领取</p>
+                    <input type="button" class="sign_p8" value="立即领取">
                 </li>
             </ul>
         </div>
@@ -94,47 +103,47 @@
     </div>
     <div class="mask"></div>
     <!-- 签到成功 -->
-    <div class="success_01" style="display:none;">
+    <div class="success_01">
         <div class="close_btn"></div>
     </div>
     <!-- 福袋1 -->
-    <div class="award_01" style="display:none;">
+    <div class="award_01">
         <div class="close_btn" style="top:160px;"></div>
     </div>
     <!-- 福袋2 -->
-    <div class="award_02" style="display:none;">
+    <div class="award_02">
         <div class="close_btn" style="top:160px;"></div>
     </div>
     <!-- 福袋3 -->
-    <div class="award_03" style="display:none;">
+    <div class="award_03">
         <div class="close_btn" style="top:280px;"></div>
     </div>
     <!-- 领取成功 -->
-    <div class="success_02" style="display:none;">
+    <div class="success_02">
         <div class="close_btn"></div>
     </div>
     <!-- 活动未开始 -->
-    <div class="NoStart" style="display:none;">
+    <div class="NoStart">
         <div class="close_btn"></div>
     </div>
     <!-- 时间未到 -->
-    <div class="NoBegin" style="display:none;">
+    <div class="NoBegin">
         <div class="close_btn"></div>
     </div>
     <!-- 没有领取条件 -->
-    <div class="NoTerm" style="display:none;">
+    <div class="NoTerm">
         <div class="close_btn"></div>
     </div>
     <!-- 活动已结束 -->
-    <div class="end" style="display:none;">
+    <div class="end">
         <div class="close_btn"></div>
     </div>
     <!-- 福利已领取 -->
-    <div class="get" style="display:none;">
+    <div class="get">
         <div class="close_btn"></div>
     </div>
     <!-- 错误弹窗 -->
-    <div class="error" style="">
+    <div class="error">
         <div class="close_btn"></div>
         <p class="error_text"></p>
     </div>
@@ -155,9 +164,12 @@
     // 签到结束时间,兑换礼包开始时间
     var end = new Date(2018, 0, 1);
 
+    // var day = 26;
+    // console.log(day)
+
     // 签到方法
     function qiandao() {
-        $(".date" + myDate.getDate()).find("div").addClass('qdbg');
+      $(".date"+day).find("div").addClass('qdbg');
     }
 
     // 签到成功
@@ -166,7 +178,7 @@
         $(".close_btn").show();
         $(".success_01").show();
         $(".sign_btn1").val("已签到").css("color", "#c37d02");
-        $(".date" + date.getDate()).find("div").addClass('qdbg');
+        // $(".date" + date.getDate()).find("div").addClass('qdbg');
     }
 
     // 领取成功
@@ -230,9 +242,17 @@
         $(".close_btn").show();
     }
 
+    // 时间未到
     function NoBegin() {
         $(".mask").show();
         $(".NoBegin").show();
+        $(".close_btn").show();
+    }
+
+    // 异常错误
+    function error(){
+        $(".mask").show();
+        $(".error").show();
         $(".close_btn").show();
     }
 
@@ -242,6 +262,7 @@
         $(".end").hide();
         $(".mask").hide();
         $(".error").hide();
+        $(".NoTerm").hide();
         $(".NoBegin").hide();
         $(".NoStart").hide();
         $(".award_01").hide();
@@ -260,14 +281,14 @@
     // 每日签到按钮
     $(".sign_btn1").click(function () {
         // 活动未开始 和 活动结束
-        if (date < start) {
-            NoStart();
-        } else if (date >= end) {
-            end();
-        } else if (start <= date < end) {
-            success_01();
-        };
-
+        // if (date < start) {
+        //     NoStart();
+        // } else if (date >= end) {
+        //     end();
+        // } else if (start <= date < end) {
+        //     success_01();
+        // };
+        qiandao();
         // $.ajax({
         //     type: 'POST',
         //     url: '118.31.20.195:8083/activity/doubleDanActivity',
@@ -294,11 +315,13 @@
     $(".sign_btn2").click(function () {
         // 活动未开始 
         if (date < end) {
-            NoStart();
-        } else if (date > end) {
+            // NoStart();
+            NoTerm();
+        } 
+        else if (date > end) {
             end();
         } else if (date = end) {
-           
+
             // award_01();
             success_03();
         };
@@ -331,20 +354,21 @@
     // 第一个立即领取
     $(".sign_p7").click(function () {
         success_02();
-        $(this).text("已领取").addClass("unchoose");
+        $(this).val("已领取").addClass("unchoose").attr("disabled", "disabled");
         $(".sign_p8").click(function () {
             get();
-            $(this).text("立即领取").removeClass("unchoose");
+            $(this).val("立即领取").removeClass("unchoose");
         });
     })
+
 
     // 第二个立即领取
     $(".sign_p8").click(function () {
         success_02();
-        $(this).text("已领取").addClass("unchoose");
+        $(this).val("已领取").addClass("unchoose").attr("disabled", "disabled");
         $(".sign_p7").click(function () {
             get();
-            $(this).text("立即领取").removeClass("unchoose");
+            $(this).val("立即领取").removeClass("unchoose");
         });
     })
 
