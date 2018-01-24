@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+main{
+    padding: 20px;
+}
+h1{
+    color: #101010;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 8px 0 8px 0;
+}
+p{
+    color: #888;
+    font-size: 12px;
+    line-height: 2;
+}
