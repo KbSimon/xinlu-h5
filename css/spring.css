@@ -1,0 +1,87 @@
+html,body{
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:'';
+    visibility:hidden;
+    height:0
+    }
+.clearfloat{
+    zoom:1
+}
+
+.banner,
+.part1{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.banner{
+    height: 400px;
+    background: url("../images/spring/img_01.png") center no-repeat;
+}
+
+.part1{
+    height: 934px;
+    background: url("../images/spring/img_02.png") center no-repeat;
+}
+
+.part1_content{
+    width: 680px;
+    /* height: 770px; */
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.rules_top,
+.rules_bottom{
+    font-size: 26px;
+    color: #a65418;
+    padding: 0 40px;
+    text-align: justify;
+    line-height: 1.35;
+}
+
+.part1_bg{
+    width: 351px;
+    height: 315px;
+    margin:  0 auto;
+    background: url("../images/spring/img_03.png") center no-repeat;
+}
+
+.btn{
+    width: 642px;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 15px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    background: url("../images/spring/img_04.png") center no-repeat;
+}
+
+.explain{
+    font-size: 24px;
+    color: #d00f22;
+    padding-top: 30px;
+    text-align: center;
+}

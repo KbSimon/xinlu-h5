@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="format-detection" content="telephone=yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>筑梦家</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/zmrules.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
@@ -27,9 +24,8 @@
         </div>
         <div>
             <h1>4、筑梦家收益计算方式</h1>
-            <p>筑梦家可获得好友投资金额年化2%的收益，计算公式如下：
-                收益=好友投资金额*2%*投资周期/360  
-                此外，筑梦家奖励有效原则为，好友投资时是否处于有效的筑梦关系时间内，举例如下：与好友的筑梦关系2日后到期，好友于今日投资10000元，30天周期项目，则30天后，您依然可获得奖励=10000*2%*30/360=16.67（元）</p>
+            <p>筑梦家可获得好友投资金额年化2%的收益，计算公式如下： 收益=好友投资金额*2%*投资周期/360 此外，筑梦家奖励有效原则为，好友投资时是否处于有效的筑梦关系时间内，举例如下：与好友的筑梦关系2日后到期，好友于今日投资10000元，30天周期项目，则30天后，您依然可获得奖励=10000*2%*30/360=16.67（元）
+            </p>
         </div>
         <div>
             <h1>5、筑梦家奖励发放时间</h1>
@@ -44,9 +40,7 @@
 
 </html>
 <script type="text/javascript">
-    var html = document.querySelector('html');
-    html.style.fontSize = html.offsetWidth / 750 * 100 + 'px';
-    addEventListener('resize', function () {
-        html.style.fontSize = html.offsetWidth / 750 * 100 + 'px';
-    }, false);
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
 </script>
