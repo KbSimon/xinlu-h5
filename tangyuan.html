@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>元宵活动</title>
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/css/tangyuan.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/xinlu-icon.ico">
+    <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div class="part">
+        <div class="part_content">
+            <p>3月2日当天（00：00-24：00），</p>
+            <p>鑫路金融所有标的均加息2%，<b>满标即计息，仅此一天。</b></p>
+            <div class="btn">立即投资</div>
+            <span class="explain">以上活动鑫路金融平台保留法律许可范围内的解释权</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' +
+        phoneScale + ', target-densitydpi=device-dpi">');
+
+    // 获取当前时间
+    var date = new Date();
+
+    // 活动开始时间
+    var start = new Date(2018, 2, 2);
+
+    // 活动结束时间
+    var end = new Date(2018, 2, 2);
+
+    $(".btn").click(function(){
+        if(date < start){
+            alert("活动尚未开始，请耐心等待！");
+        }else if(date > end){
+            alert("抱歉，您来晚了，活动已结束。");
+        }else{
+            invest_app();
+        }
+    })
+</script>

@@ -1,0 +1,85 @@
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.part,
+.banner{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.banner{
+    height: 970px;
+    background: url("../images/tangyuan/img_01.png") center no-repeat;
+}
+
+.part{
+    height: 364px;
+    background: url("../images/tangyuan/img_02.png") center no-repeat;
+}
+
+.part_content{
+    text-align: center;
+}
+
+.part_content>p{
+    font-size: 28px;
+    color: #dd3d31;
+    line-height: 1.5;
+}
+
+.btn{
+    width: 433px;
+    height: 139px;
+    font-size: 34px;
+    color: #ad1b1b;
+    line-height: 139px;
+    font-weight: bold;
+    margin: 40px auto 50px auto;    
+    background: url("../images/tangyuan/img_03.png") center no-repeat;
+}
+
+.explain{
+    font-size: 24px;
+    color: #cb8e3e;
+}
