@@ -1,0 +1,223 @@
+@charset "utf-8";
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+input,
+button{
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.invite_content{
+    width: 750px;
+    height: 1192px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/invite/invite_03.png") center no-repeat;
+}
+
+.invite_reg{
+    bottom: 0;
+    width: 600px;
+    height: 635px;
+    margin: 0 auto;
+    padding: 0 45px;
+    margin-left: 30px;
+    background: #fff;
+    position: absolute;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+form{
+    margin-top: 55px;
+}
+
+.invite_ul>li{
+    width: 600px;
+    height: 80px;
+    line-height: 80px;
+    background: #eaeaea;
+    border-radius: 80px;
+}
+
+.invite_ul>li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+.pwd_bg,
+.code_01,
+.code_02,
+.phone_bg{
+    float: left;
+    width: 44px;
+    height: 80px;
+    margin-left: 40px;
+}
+
+.phone_bg{
+    background: url("../images/invite/phone.png") center no-repeat;
+}
+
+.pwd_bg{
+    background: url("../images/invite/password.png") center no-repeat;
+}
+
+.code_01{
+    background:  url("../images/invite/code.png") center no-repeat;
+}
+
+.code_02{
+    background: url("../images/invite/code.png") center no-repeat;
+}
+
+.invite_ul>li>input{
+    float: left;
+    outline: none;
+    border: none;
+    height: 65px;
+    width: 300px;
+    color: #333;
+    font-size: 30px;
+    padding-top: 6px;
+    margin-left: 30px;
+    background: #eaeaea;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+
+input[type="number"]{-moz-appearance:textfield;}
+
+.get{
+    float: left;
+    width: 140px;
+    height: 60px;    
+    border: none;
+    outline: none;
+    margin-top: 9px;
+    font-size: 24px;
+    color: #ec5e58;
+    background: #fff;
+    border-radius: 60px;
+}
+
+.apply_now{
+    color: #fff;
+    width: 616px;
+    height: 98px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    margin: 30px auto 15px auto;
+    background: url("../images/invite/btn.png") center no-repeat;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.deal>input:checked+label {
+    background: #3cc09f;
+}
+
+.deal>input+label {
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e4e4e4;
+}
+
+.deal>input:checked+label::after {
+    top: 3px;
+    left: 0;
+    width: 100%;
+    line-height: 20px;
+    font-size: 20px;
+    color: #fff;
+    content: "\2713";
+    position: absolute;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.deal {
+    float: left;
+    font-size: 30px;
+    text-align: center; 
+}
+
+.download{
+    float: right;
+    color: #666;
+    font-size: 24px;
+    padding-top: 5px;
+
+}
+
+.download>span{
+    width: 6px;
+    height: 14px;
+    float: left;
+    margin: 12px 10px;
+    background: #ec5e58;
+}
+
+.download>p{
+    float: right;
+}

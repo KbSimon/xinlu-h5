@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.part_01{
+    width: 750px;
+    height: 500px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f87974;
+    background: #f87974 url("../images/invite/invite_01.png") center no-repeat;
+}   
+
+.part_02{
+    width: 750px;
+    margin: 0 auto;
+    padding-bottom: 190px;
+    background: #f87974;
+}
+
+.company,
+.business,
+.questions{
+    width: 640px;
+    color: #666;
+    font-size: 30px;
+    background: #fff;
+    text-align: justify;
+    border-radius: 15px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    padding: 40px 25px 0 25px;
+ 
+}
+
+.company>span,
+.business>span,
+.questions>span{
+    color: #888;
+    font-size: 26px;
+}
+
+.company{
+    height: 355px;
+    margin: 0 auto;
+}
+
+.questions{
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.business{
+    height: 495px;
+    margin: 40px auto;
+}
+
+.title{
+    width: 265px;
+    height: 55px;
+    color: #fff;
+    font-size: 34px;
+    border-radius: 55px;
+    text-align: center;
+    line-height: 55px;
+    margin: 0 auto 40px auto;
+    background: #ec5e58;
+}
+
+.invite_bg{
+    width: 649px;
+    height: 147px;
+    margin: 0 auto;
+    margin-top: 50px;
+    line-height: 80px;
+    background: url("../images/invite/invite_02.png") center no-repeat;
+}
+

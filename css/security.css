@@ -1,0 +1,408 @@
+@charset "utf-8";
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.part_01 {
+    height: 818px;
+    background: url("../images/security/img_01.png") center no-repeat;
+}
+
+.part_01,
+.part_03,
+.part_04,
+.part_05,
+.part_06,
+.part_07 {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.part_02 {
+    color: #666;
+    height: 400px;
+    padding: 0 55px;
+    background: #fff;
+    text-align: justify;
+}
+
+.part_02>p:nth-of-type(1) {
+    width: 640px;
+    margin: 0 auto;
+    font-size: 28px;
+}
+
+.data_ul {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.data_ul>li {
+    float: left;
+    width: 160px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.data_ul>li>p:nth-of-type(1) {
+    font-size: 36px;
+    color: #ff6f20;
+    padding: 50px 0 20px 0;
+}
+
+.data_ul>li>p:nth-of-type(2) {
+    font-size: 20px;
+}
+
+.data_ul>li>p>span {
+    font-size: 22px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.part_03 {
+    height: 743px;
+    background: url("../images/security/img_02.png") center no-repeat;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+.title>p:nth-of-type(1) {
+    font-size: 30px;
+    padding: 40px 0 15px 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide>p {
+    font-size: 26px;
+    margin-top: 550px;
+}
+
+.pic1{
+    background: url("../images/security/pic_01.png") center no-repeat;
+}
+
+.pic2{
+    background: url("../images/security/pic_02.png") center no-repeat;
+}
+
+.pic3{
+    background: url("../images/security/pic_03.png") center no-repeat;
+}
+
+.pic4{
+    background: url("../images/security/pic_04.png") center no-repeat;
+}
+
+.pic5{
+    background: url("../images/security/pic_05.png") center no-repeat;
+}
+
+.part_04 {
+    height: 1160px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title_02>p {
+    color: #333;
+    font-size: 30px;
+    width: 160px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.title_02>span {
+    color: #535353;
+}
+
+.icon_01 {
+    width: 126px;
+    height: 94px;
+    margin: 50px auto 40px auto;
+    background: url("../images/security/img_03.png") center no-repeat;
+}
+
+.title_03 {
+    letter-spacing: 1.5px;
+}
+
+.p1 {
+    color: #434343;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.p2 {
+    font-size: 26px;
+    color: #676767;
+    line-height: 1.5;
+}
+
+.p2>span {
+    color: #f67f31;
+}
+
+.icon_02 {
+    width: 105px;
+    height: 104px;
+    margin: 60px auto 50px auto;
+    background: url("../images/security/img_04.png") center no-repeat;
+}
+
+.icon_03 {
+    width: 111px;
+    height: 93px;
+    margin: 65px auto 40px auto;
+    background: url("../images/security/img_05.png") center no-repeat;
+}
+
+.title_04 {
+    width: 185px;
+    height: 94px;
+    margin: 0 auto;
+    background: url("../images/security/title_04.png") center no-repeat;
+}
+
+.pledge_ul {
+    width: 750px;
+    margin: 60px auto 160px auto;
+}
+
+.pledge_ul>li {
+    margin-bottom: 100px;
+}
+
+.pledge_ul>li:nth-of-type(2n)>div:nth-of-type(1) {
+    width: 390px;
+    padding: 0 0 0 60px;
+}
+
+.icon_04,
+.icon_05,
+.icon_06,
+.icon_07 {
+    width: 300px;
+    height: 190px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.icon_04 {
+    background: url("../images/security/img_06.png") center no-repeat;
+}
+
+.icon_05 {
+    background: url("../images/security/img_07.png") center no-repeat;
+}
+
+.icon_06 {
+    background: url("../images/security/img_08.png") center no-repeat;
+}
+
+.icon_07 {
+    background: url("../images/security/img_09.png") center no-repeat;
+}
+
+.p3,
+.p5 {
+    color: #666666;
+    font-size: 28px;
+}
+
+.p3 {
+    padding: 15px 0 10px 0;
+}
+
+.p4 {
+    color: #848484;
+    font-size: 24px;
+}
+
+.p5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 35px 0;
+}
+
+.p6 {
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+}
+
+.p6 {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.pledge_text {
+    width: 430px;
+    padding-right: 20px;
+}
+
+.part_06 {
+    height: 900px;
+    position: relative;
+    background: url("../images/security/img_10.png") center no-repeat;
+}
+
+.money {
+    left: 0;
+    right: 0;
+    width: 630px;
+    height: 1300px;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    border-radius: 15px;
+    margin: 230px auto 140px auto;
+    box-shadow: 0px 5px 20px 5px #ffeddf;
+}
+
+.icon_08 {
+    width: 198px;
+    height: 63px;
+    margin-top: 45px;
+    background: url("../images/security/img_11.png") center no-repeat;
+}
+
+.icon_09 {
+    width: 202px;
+    height: 155px;
+    margin: 10px auto 0 auto;
+    background: url("../images/security/img_12.png") center no-repeat;
+}
+
+.icon_10 {
+    width: 152px;
+    height: 148px;
+    margin: 45px auto 0 auto;
+    background: url("../images/security/img_13.png") center no-repeat;
+}
+
+.icon_11 {
+    width: 199px;
+    height: 63px;
+    margin: 65px 0 45px 0;
+    background: url("../images/security/img_14.png") center no-repeat;
+}
+
+.part_07 {
+    height: 1450px;
+    text-align: center;
+    padding-top: 800px;
+}
+
+.icon_12 {
+    width: 171px;
+    height: 84px;
+    margin: 0 auto;
+    background: url("../images/security/title_05.png") center no-repeat;
+}
+
+.p7 {
+    color: #666;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.p8 {
+    color: #666;
+    width: 630px;
+    margin: 0 auto;
+    font-size: 26px;
+    text-align: justify;
+}
+
+.law_top {
+    margin-top: 70px;
+}
+
+.law_middle,
+.law_bottom {
+    margin-top: 100px;
+}
+
+.law_bottom {
+    margin-bottom: 50px;
+}
