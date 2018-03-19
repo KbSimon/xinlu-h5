@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.part_01,
+.part_02,
+.paer_03,
+.part_04{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.part_01{
+    height: 1018px;
+    position: relative;
+    background: url("../images/mode/img_01.png") center no-repeat;
+}
+
+.item_01{
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 620px;
+}
+
+.title_01{
+    width: 426px;
+    height: 35px;
+    margin: 0 auto;
+    background: url("../images/mode/img_02.png") center no-repeat;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.item_01>p{
+    color: #767676;
+    font-size: 28px;
+    padding: 75px 40px;
+    text-align: justify;
+}
+
+.part_02{
+    height: 793px;
+    background: url("../images/mode/img_03.png") center no-repeat;
+}
+
+.part_03{
+    height: 36px;
+    margin: 80px 0 35px 0;
+    background: url("../images/mode/img_04.png") center no-repeat;
+}
+
+.part_04{
+    height: 1226px;
+    background: url("../images/mode/img_05.png") center no-repeat;
+}
+
+.item_02{
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 155px;
+}
+
+.title_02{
+    font-size: 30px;
+    color: #074187;  
+    text-align: center;  
+}
+
+.item_02>li{
+    padding-top: 50px;
+}
+
+.icon{
+    width: 23px;
+    height: 18px;
+    margin: 20px auto 30px auto;
+    background: url("../images/mode/img_06.png") center no-repeat;
+}
+
+.item_03>div{
+    height: 180px;
+}
+
+
+.left{
+    width: 277px;
+    float: left;
+    text-align: right;
+    padding-right: 40px;
+    border-right: 8px solid #fff;
+}
+
+.right{
+    float: right;
+    width: 255px;
+    padding: 0 35px;
+    text-align: justify;
+}
+
+.text{
+    color: #83a9d3;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+.btn{
+    height: 140px;
+}
+
+.btn>a{
+    width: 648px;
+    height: 94px;
+    color: #fff;
+    display: block;
+    font-size: 32px;   
+    line-height: 94px; 
+    text-align: center;
+    margin: 65px auto 45px auto;    
+    background: url("../images/mode/btn.png") center no-repeat;
+}
