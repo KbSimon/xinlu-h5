@@ -149,17 +149,14 @@ p{
     line-height: 1.6;
 }
 
-.btn{
-    height: 140px;
-}
 
-.btn>a{
+.btn{
     width: 648px;
-    height: 94px;
+    height: 140px;
     color: #fff;
     display: block;
     font-size: 32px;   
-    line-height: 94px; 
+    line-height: 140px; 
     text-align: center;
     margin: 65px auto 45px auto;    
     background: url("../images/mode/btn.png") center no-repeat;
